@@ -9,8 +9,8 @@
     </form>
     <div>
     {% if url %}
-      <p> original url: <a href='{{url}}'>{{url}}</a></p>
-      <p> shortened url: <a href='http://shorten.countcert.com/{{key}}'>http://shorten.countcert.com/{{key}}</a></p>
+      <p>Original url: <a href='{{url}}'>{{url}}</a></p>
+      <p>Shortened url: <a href='http://shorten.countcert.com/{{key}}'>http://shorten.countcert.com/{{key}}</a></p>
       {% if url.__len__() < (29 + key.__len__()) %}
         <p> <del>saved</del> <ins>extra</ins> chars : <b> {{(29 + key.__len__()) - url.__len__()}} </b> !</p>
       {% else %}
